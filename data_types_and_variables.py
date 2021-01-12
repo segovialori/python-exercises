@@ -66,7 +66,8 @@ premium_member = False
 #If not premimum, then determine the amount of items bought.
 items = 5
 items_bought = items >= 2
-product_offer = premium_member == True or items_bought == True
+offer_valid = True
+product_offer = offer_valid == True and (premium_member == True or items_bought == True)
 
 #5.  Create a variable that holds a boolean value for each of the following conditions:
 #the password must be at least 5 characters
@@ -83,8 +84,7 @@ username_length = len(username) <= 20
 username_length
 not_same = password != username
 not_same
-no_whitespace = 
+no_whitespace = username[0] and username[-1] and password[0] and password[-1] != ' '
+password_has_no_begining_or_ending_whitespace = password == password.strip()
 
-
-
-
+username_has_no_begining_or_ending_whitespace = username == username.strip()
