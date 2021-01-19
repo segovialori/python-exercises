@@ -77,7 +77,7 @@ product_offer = offer_valid == True and (premium_member == True or items_bought 
 
 username = 'codeup'
 password = 'notastrongpassword'
-
+#
 pass_length = len(password) >= 5
 pass_length
 username_length = len(username) <= 20
