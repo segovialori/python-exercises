@@ -1,2 +1,2 @@
 # python-exercises
-CodeUp Python Exercises
+Codeup Python Exercises
